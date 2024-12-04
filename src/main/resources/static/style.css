@@ -1,0 +1,98 @@
+.kanban-column {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.kanban-column h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.kanban-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.kanban-card button:hover {
+    opacity: 0.8;
+}
+
+.kanban-card button.todo {
+    background-color: #0056b3;
+}
+
+.kanban-card button.todo:hover {
+    background-color: #003366;
+}
+
+.kanban-card button.doing {
+    background-color: #0056b3;
+}
+
+.kanban-card button.doing:hover {
+    background-color: #003366;
+}
+
+.kanban-card button.done {
+    background-color: #0056b3;
+}
+
+.kanban-card button.done:hover {
+    background-color: #003366;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+}
+
+.btn-custom:hover {
+    background-color: #003366;
+}
+
+.nav-link.btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    display: block;
+    margin: 5px 0;
+}
+
+.nav-link.btn-custom:hover {
+    background-color: #003366;
+    text-decoration: none;
+}

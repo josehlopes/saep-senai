@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+}
+
+.btn-custom:hover {
+    background-color: #003366;
+}
+
+.nav-link.btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    display: block;
+    margin: 5px 0;
+}
+
+.nav-link.btn-custom:hover {
+    background-color: #003366;
+    text-decoration: none;
+}
+
+.d-grid .btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+}
+
+.d-grid .btn-custom:hover {
+    background-color: #003366;
+}
