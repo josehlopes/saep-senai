@@ -212,7 +212,6 @@
             return response.json();
         })
         .then(task => {
-            // Preencher os campos do modal
             document.getElementById('modal-description').value = task.description || '';
             document.getElementById('modal-sector').value = task.sector || '';
             document.getElementById('modal-priority').value = task.priority || 0;
@@ -220,18 +219,16 @@
             document.getElementById('modal-user_id').value = task.userId || '';
             document.getElementById('modal-task-id').value = task.id;  // Definindo o ID da tarefa no campo oculto
 
-            // Mapear valores para exibição amigável
             const prioritySelect = document.getElementById('modal-priority');
-            prioritySelect.value = task.priority;  // Deixar a prioridade selecionada
+            prioritySelect.value = task.priority;
 
             const statusSelect = document.getElementById('modal-status');
-            statusSelect.value = task.status;  // Deixar o status selecionado
+            statusSelect.value = task.status;
 
             const userSelect = document.getElementById('modal-user_id');
-            // Atualizar o campo de usuários para exibir o nome
             Array.from(userSelect.options).forEach(option => {
                 if (parseInt(option.value) === task.userId) {
-                    option.selected = true;  // Selecionar o usuário correto
+                    option.selected = true;
                 }
             });
 
@@ -248,7 +245,6 @@
     const description = document.getElementById('modal-description').value;
     const sector = document.getElementById('modal-sector').value;
 
-    // Capturar os valores de prioridade e status a partir dos selects
     const priority = parseInt(document.getElementById('modal-priority').value);  // Prioridade selecionada
     const status = parseInt(document.getElementById('modal-status').value);      // Status selecionado
 
@@ -258,8 +254,8 @@
         id: taskId,
         description,
         sector,
-        priority,   // Prioridade capturada
-        status,     // Status capturado
+        priority,
+        status,
         userId: user_id
     };
 
